@@ -5,7 +5,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building this first.'
-        sh 'date'
+        sh 'echo date'
       }
     }
     stage('Test') {
