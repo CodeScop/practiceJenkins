@@ -5,19 +5,19 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building this first.'
-        sh 'echo date'
+        sh 'date'
       }
     }
     stage('Test') {
       steps {
         echo 'Testing it second.'
-        echo 'date'
+        sh 'whoami'
       }
     }
     stage('Deploy') {
       steps {
         echo 'Deploying it third.'
-        echo 'date'
+        echo 'it done'
       }
     }
   }
